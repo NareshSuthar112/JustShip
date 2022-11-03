@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/d_8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/product_card"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:foregroundTint="@color/background"
+            android:translationZ="5dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/imgSupplier"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:fitsSystemWindows="true"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/i1"
+                android:transitionName="product_image" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_20dp"
+                android:text="Trade Name"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_20dp"
+                android:layout_marginTop="5dp"
+                android:text="Technical Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_20dp"
+                android:layout_marginTop="5dp"
+                android:text="Company Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="@dimen/d_8dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="@dimen/d_1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#000" />
+
+        <TextView
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Bulk Deal Details"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="@dimen/d_1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Packing"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Amount(₹)"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_bulk_deal_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/d_8dp"
+        android:layout_marginTop="@dimen/d_8dp"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d_8dp"
+        android:gravity="center"
+        android:text="Discount on Quantity Range"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/discount_qty_range_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/d_8dp"
+        android:layout_marginTop="@dimen/d_8dp"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/d_8dp"
+        android:gravity="center"
+        android:text="Valid Upto 04-02-2021"
+        android:textColor="#000"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveForCompare"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_5dp"
+            android:backgroundTint="#DEE1F6"
+            android:padding="8dp"
+            android:text="Save for Compare"
+            android:textAllCaps="false"
+            android:textColor="#2A398F"
+            android:textSize="10sp"
+            app:cornerRadius="10dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBulkOrder"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_5dp"
+            android:backgroundTint="#E5F8EA"
+            android:padding="8dp"
+            android:text="Order"
+            android:textAllCaps="false"
+            android:textColor="#00BF2D"
+            android:textSize="10sp"
+            app:cornerRadius="10dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_5dp"
+            android:backgroundTint="#FDF0E7"
+            android:padding="8dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#EC690F"
+            android:textSize="10sp"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

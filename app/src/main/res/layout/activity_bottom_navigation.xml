@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8ADAD"
+    tools:context=".BottomNavigationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4A4545"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Home"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ntb_animation_duration="400"
+        app:ntb_preview_colors="@color/yellow"
+        app:ntb_corners_radius="10dp"
+        app:ntb_active_color="@color/dark_orange"
+        app:ntb_inactive_color="@color/white"
+        app:ntb_badged="true"
+        app:ntb_titled="true"
+        android:layout_alignParentBottom="true"
+        app:ntb_scaled="true"
+        app:ntb_tinted="true"
+        app:ntb_title_mode="all"
+        app:ntb_badge_position="right"
+        app:ntb_badge_gravity="top"
+        app:ntb_badge_bg_color="#ffff0000"
+        app:ntb_badge_title_color="#ffffffff"
+        app:ntb_typeface="fonts/custom_typeface.ttf"
+        app:ntb_badge_use_typeface="true"
+        app:ntb_swiped="true"
+        app:ntb_bg_color="@color/white"
+        app:ntb_icon_size_fraction="0.5"
+        app:ntb_badge_size="10sp"
+        app:ntb_title_size="10sp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:id="@+id/viewPager"/>
+
+   <!-- <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="?attr/actionBarSize" />
+-->
+    <!--<com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/btmAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="2dp">
+
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_menu" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:onClick="floatClick"
+            android:src="@drawable/ic_more_horiz_black_24dp" />
+    </FrameLayout>-->
+
+</RelativeLayout>

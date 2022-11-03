@@ -1,0 +1,140 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyFirstProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="hintTextAppearance">@style/Caption.InputHint</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="toolbarStyle">@style/Toolbar</item>
+    </style>
+    <style name="Caption.InputHint"> </style>
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="Caption">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@color/selector_dark_grey</item>
+    <item name="android:fontFamily">sans-serif</item>
+
+</style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/cart_background</item>
+    </style>
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/background</item>
+    </style>
+    <style name="MyCustomTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/right_to_left</item>
+        <item name="android:windowExitAnimation">@anim/left_to_right</item>
+    </style>
+    <style name="DialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+    <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="SelectableItemTheme">
+        <item name="android:colorControlHighlight">@color/background</item>
+    </style>
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#AA00FF</item>
+        <item name="android:textColorSecondary">#0091EA</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- added all to see which one will work.-->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:itemBackground">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
+
+    </style>
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/colorAccent</item>
+    </style>
+    <style name="Subtitle1">
+
+    <item name="android:textSize">18sp</item>
+
+    <item name="android:textColor">@color/selector_black</item>
+
+    <item name="android:lineSpacingExtra">3sp</item>
+
+    <item name="android:fontFamily">@font/quicksand_medium</item>
+
+</style>
+    <style name="Toolbar">
+
+    <item name="android:background">@color/white</item>
+
+    <item name="android:layout_width">match_parent</item>
+
+    <item name="android:layout_height">?attr/actionBarSize</item>
+
+    <item name="popupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+
+    <item name="titleMarginStart">@dimen/content_margin</item>
+
+    <item name="titleTextAppearance">@style/H6</item>
+
+</style>
+    <style name="H6">
+
+    <item name="android:textSize">20sp</item>
+
+    <item name="android:textColor">@color/selector_black</item>
+
+    <item name="android:lineSpacingExtra">3sp</item>
+
+    <item name="android:fontFamily">@font/quicksand_medium</item>
+
+</style>
+    <style name="Subtitle3">
+
+    <item name="android:textSize">14sp</item>
+
+</style>
+
+    <declare-styleable name="ColorOptionsView">
+        <attr name="titleText" format="string" localization="suggested" />
+        <attr name="valueColor" format="color" />
+    </declare-styleable>
+</resources>

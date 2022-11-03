@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_5dp"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/AllFeatures"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:text="Add Product"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tvFree"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="33dp"
+                android:layout_toStartOf="@+id/tvVIP"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="#A1FFFFFF"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tvVIP"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/d_42dp"
+                android:layout_toStartOf="@+id/tvPremium"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tvPremium"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rlHeader"
+            android:layout_marginStart="@dimen/d_2dp"
+            android:layout_marginEnd="@dimen/d_2dp"
+            android:background="#27FFFFFF" />
+
+    </RelativeLayout>
+
+</LinearLayout>

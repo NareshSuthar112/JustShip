@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Screens.Dashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/gujarat_pesticides"
+            android:textColor="@color/background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/d_7dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:strokeColor="@color/background"
+                        android:text="Company"
+                        app:strokeWidth="@dimen/d_1dp"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:textColor="@color/background"
+                        android:textAllCaps="false"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPesti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wholesaler"
+                        app:strokeWidth="1dp"
+                        android:layout_marginLeft="@dimen/d_5dp"
+                        app:strokeColor="@color/background"
+                        android:textColor="@color/background"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:textAllCaps="false"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Technical"
+                        android:textColor="@color/background"
+                        android:layout_marginLeft="@dimen/d_5dp"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/background"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:textAllCaps="false"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Products"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/background"
+                        android:textColor="@color/background"
+                        android:layout_marginLeft="5dp"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:textAllCaps="false"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Most Searched Companies"
+                android:textColor="@color/black"
+                android:textSize="@dimen/d_16dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_marginTop="10dp"
+                android:background="#F8F8F8"
+                android:scrollIndicators="none"
+                tools:targetApi="m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/d_8dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:text="New Launched Products"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/d_16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/new_launched_view_all"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="View All"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/d_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="0.5"
+                        android:drawableRight="@drawable/ic_baseline_chevron_right_24" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/new_product_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_marginTop="10dp"
+                android:background="#F8F8F8"
+                android:scrollIndicators="none"
+                tools:targetApi="m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/d_8dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:text="Bulk Deals"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/d_16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="View All"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/d_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="0.5"
+                        android:drawableRight="@drawable/ic_baseline_chevron_right_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bulk_deal_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"
+                android:layout_marginBottom="10dp"
+                android:background="#F8F8F8"
+                android:scrollIndicators="none"
+                tools:targetApi="m" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

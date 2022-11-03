@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SuperCoinFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:title="Super Coin" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="gone" />
+
+    <!-- <com.google.android.material.progressindicator.ProgressIndicator
+         android:id="@+id/progressLinearDeterminate"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:progress="70"
+         style="@style/Widget.MaterialComponents.ProgressIndicator.Linear.Determinate"
+         android:layout_marginTop="?attr/actionBarSize"/>-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipe_refresh"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp" />
+
+
+
+       </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

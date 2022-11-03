@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.NewLaunchedProducts"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:buttonGravity="center_vertical"
+        android:theme="@style/MyOverflowButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="New Launched Products"
+            android:textColor="@color/background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linear_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/d_7dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/background"
+                android:text="All"
+                android:backgroundTint="@color/background"
+                app:strokeWidth="@dimen/d_1dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imgAll"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPesti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesticides"
+                app:strokeWidth="1dp"
+                android:layout_marginLeft="@dimen/d_5dp"
+                app:strokeColor="@color/background"
+                android:textColor="@color/background"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgPesti"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seeds"
+                android:textColor="@color/background"
+                android:layout_marginLeft="@dimen/d_5dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/background"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgSeed"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fertilizers"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/background"
+                android:textColor="@color/background"
+                android:layout_marginLeft="5dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgFert"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_sub_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/d_7dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/background"
+                android:text="All"
+                android:backgroundTint="@color/background"
+                app:strokeWidth="@dimen/d_1dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imgSubAll"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnInsect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insecticides"
+                app:strokeWidth="1dp"
+                android:layout_marginLeft="@dimen/d_5dp"
+                app:strokeColor="@color/background"
+                android:textColor="@color/background"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgInsect"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFungi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fungicides"
+                android:textColor="@color/background"
+                android:layout_marginLeft="@dimen/d_5dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/background"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgFungi"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHerbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herbicides"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/background"
+                android:textColor="@color/background"
+                android:layout_marginLeft="5dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgHerbi"
+                android:layout_width="@dimen/d_20dp"
+                android:layout_height="@dimen/d_20dp"
+                android:src="@drawable/arrow_shape"
+                android:layout_marginTop="-13dp"
+                android:layout_gravity="center"
+                app:tint="@color/background"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/product_grid_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:background="#F8F8F8"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/d_5dp"
+        android:scrollIndicators="none"
+        tools:targetApi="m"
+        android:scrollbars="none"
+        android:layout_gravity="center"
+        android:overScrollMode="never"
+        android:layout_marginTop="@dimen/d_5dp"
+        android:horizontalSpacing="@dimen/d_5dp"
+        android:verticalSpacing="@dimen/d_5dp"
+        android:layout_marginBottom="@dimen/d_5dp"/>
+
+</LinearLayout>

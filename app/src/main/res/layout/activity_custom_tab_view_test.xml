@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context=".TabLayout">
+
+    <com.myapplication.CustomTabViewTest
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="#F16060"
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+        custom:titleText="Background Color" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/root_otp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="4">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/otp_edit_box1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_curve_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/otp_edit_box2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_curve_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/otp_edit_box3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_curve_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/otp_edit_box4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_curve_bg"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/root_otp_layout"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/d_20dp">
+
+        <Button
+            android:id="@+id/verify_otp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Verify"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/autoHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:inputType="phone"
+        android:layout_marginHorizontal="@dimen/d_20dp" />
+
+</LinearLayout>

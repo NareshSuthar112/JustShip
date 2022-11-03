@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Screens.PlaceOrderActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/MyOverflowButtonStyle"
+        app:buttonGravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Place Order"
+            android:textColor="@color/background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/d_8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Information"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d_8dp"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="Agro Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="GST No."
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d_8dp"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:text="Address Line 1"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="Contact No. "
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d_8dp"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="Address Line 2"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="Phone No. "
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d_8dp"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="City Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="State Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d_8dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Transport Name :"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="...."
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d_8dp"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total num of order"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date (06-02-2021)"
+                android:textColor="#05986A"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/d_8dp"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:layout_marginBottom="10dp"
+            android:background="#EDEDED" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/place_order_company_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="@dimen/d_8dp"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/place_order"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FDF0E7"
+            android:padding="10dp"
+            android:text="Place All Orders"
+            android:layout_marginBottom="@dimen/d_8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/d_8dp"
+            android:textAllCaps="false"
+            android:textColor="#EC690F"
+            android:textSize="12sp"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

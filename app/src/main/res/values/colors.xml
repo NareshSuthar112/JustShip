@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#2986CF</color>
+    <color name="purple_700">#2986CF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#EFAFAF</color>
+    <color name="green">#618C62</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="blue">#89D2F3</color>
+    <color name="dark_orange">#EC714B</color>
+    <color name="purple">#A274F4</color>
+    <color name="colorAccent">#514248</color>
+    <color name="light_grey">#9db1bc</color>
+    <color name="light_pale_grey">#fafafa</color>
+    <color name="pale_grey">#f0f3f5</color>
+    <color name="background">#44C062</color>
+    <color name="status_color">#2986CF</color>
+    <color name="my_primary">#ED1C24</color>
+    <color name="table_row">#311B92</color>
+
+
+    <color name="abc_decor_view_status_guard">#ff000000</color>
+
+    <color name="abc_decor_view_status_guard_light">#ffffffff</color>
+
+    <color name="abc_search_url_text_normal">#7fa87f</color>
+
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+
+    <color name="accent_material_dark">@color/material_deep_teal_200</color>
+
+    <color name="accent_material_light">@color/material_deep_teal_500</color>
+
+    <color name="alpha_black">#2f000000</color>
+
+    <color name="alpha_black_dark">#5f000000</color>
+
+    <color name="alpha_black_very_dark">#9f000000</color>
+
+    <color name="android_arrow_color">#8a000000</color>
+
+    <color name="androidx_core_ripple_material_light">#1f000000</color>
+
+    <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
+
+    <color name="background_floating_material_dark">@color/material_grey_800</color>
+
+    <color name="background_floating_material_light">@android:color/white</color>
+
+    <color name="background_material_dark">@color/material_grey_850</color>
+
+    <color name="background_material_light">@color/material_grey_50</color>
+
+    <color name="benefit_green">#c4decb</color>
+
+    <color name="benefit_green_dark">#b7d3bf</color>
+
+    <color name="benefit_green_light">#dbe6de</color>
+
+    <color name="benefit_orange">#f6d78f</color>
+
+    <color name="benefit_orange_dark">#e7c685</color>
+
+    <color name="benefit_orange_light">#fbedba</color>
+
+    <color name="benefit_turkeys">#a6dfe2</color>
+
+    <color name="benefit_turkeys_dark">#87bec2</color>
+
+    <color name="benefit_turkeys_light">#cbeff3</color>
+
+
+
+    <color name="blue_medium">#1976d2</color>
+
+    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
+
+    <color name="bright_foreground_disabled_material_light">#80000000</color>
+
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
+
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
+
+    <color name="bright_foreground_material_dark">@android:color/white</color>
+
+    <color name="bright_foreground_material_light">@android:color/black</color>
+
+    <color name="bright_teal">#1de9b6</color>
+
+    <color name="bronze">#d89f4f</color>
+
+    <color name="browser_actions_bg_grey">#f5f5f5</color>
+
+    <color name="browser_actions_divider_color">#1e000000</color>
+
+    <color name="browser_actions_text_color">#de000000</color>
+
+    <color name="browser_actions_title_color">#646464</color>
+
+    <color name="button_material_dark">#ff5a595b</color>
+
+    <color name="button_material_light">#ffd6d7d7</color>
+
+    <color name="cardview_dark_background">#ff424242</color>
+
+    <color name="cardview_light_background">#ffffffff</color>
+
+    <color name="cardview_shadow_end_color">#03000000</color>
+
+    <color name="cardview_shadow_start_color">#37000000</color>
+
+    <color name="cc_event_cat_fertilization_conventional">#8d5845</color>
+
+    <color name="cc_event_cat_fertilization_conventional_bg">#e3d3bd</color>
+
+    <color name="cc_event_cat_fertilization_organic">#00796b</color>
+
+    <color name="cc_event_cat_fertilization_organic_bg">#c1dcc6</color>
+
+    <color name="cc_event_cat_field_preparation">#6b665c</color>
+
+    <color name="cc_event_cat_field_preparation_bg">#d4d1c9</color>
+
+    <color name="cc_event_cat_harvesting">#c2814d</color>
+
+    <color name="cc_event_cat_harvesting_bg">#f0ddbf</color>
+
+    <color name="cc_event_cat_irrigation">#347c94</color>
+
+    <color name="cc_event_cat_irrigation_bg">#c6d7d7</color>
+
+    <color name="cc_event_cat_monitoring">#b69344</color>
+
+    <color name="cc_event_cat_monitoring_bg">#ede1bd</color>
+
+    <color name="cc_event_cat_plant_protection_chemical">#91794e</color>
+
+    <color name="cc_event_cat_plant_protection_chemical_bg">#e4dbbf</color>
+
+    <color name="cc_event_cat_plant_protection_organic">#009688</color>
+
+    <color name="cc_event_cat_plant_protection_organic_bg">#bfe2cd</color>
+
+    <color name="cc_event_cat_plant_selection">#526295</color>
+
+    <color name="cc_event_cat_plant_selection_bg">#d4d5d0</color>
+
+    <color name="cc_event_cat_plant_training">#277261</color>
+
+    <color name="cc_event_cat_plant_training_bg">#cad9c3</color>
+
+    <color name="cc_event_cat_planting">#43656f</color>
+
+    <color name="cc_event_cat_planting_bg">#cad1ce</color>
+
+    <color name="cc_event_cat_post_harvest">#c86647</color>
+
+    <color name="cc_event_cat_post_harvest_bg">#f2d6be</color>
+
+    <color name="cc_event_cat_preventive_measure">#5a8070</color>
+
+    <color name="cc_event_cat_preventive_measure_bg">#d6ddc7</color>
+
+    <color name="cc_event_cat_site_selection">#6b665c</color>
+
+    <color name="cc_event_cat_site_selection_bg">#dbd6c2</color>
+
+    <color name="cc_event_cat_weeding">#6b9552</color>
+
+    <color name="cc_event_cat_weeding_bg">#dbe2bf</color>
+
+
+
+    <color name="colorPrimary">@color/primary_teal</color>
+
+    <color name="colorPrimaryAccent">@color/bright_teal</color>
+
+    <color name="colorPrimaryLight">@color/light_teal</color>
+
+    <color name="colorPrimaryMedium">@color/medium_teal</color>
+
+    <color name="colorPrimaryVeryLight">@color/very_light_teal</color>
+
+    <color name="com_facebook_blue">#1877f2</color>
+
+    <color name="com_facebook_button_background_color">@color/com_facebook_blue</color>
+
+    <color name="com_facebook_button_background_color_disabled">#ebedf0</color>
+
+    <color name="com_facebook_button_background_color_pressed">#186bda</color>
+
+    <color name="com_facebook_device_auth_text">#90949c</color>
+
+    <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
+
+    <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
+
+    <color name="com_facebook_likeview_text_color">#6a7180</color>
+
+    <color name="com_facebook_primary_button_disabled_text_color">#bcc3c9</color>
+
+    <color name="com_facebook_primary_button_pressed_text_color">#dadde2</color>
+
+    <color name="com_facebook_primary_button_text_color">#ffffff</color>
+
+    <color name="com_smart_login_code">#3c6499</color>
+
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+
+    <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>
+
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+
+    <color name="common_google_signin_btn_text_light_disabled">#1f000000</color>
+
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+
+    <color name="common_google_signin_btn_text_light_pressed">#de000000</color>
+
+    <color name="crop_additional">#8fb4cd</color>
+
+    <color name="crop_additional_light">#d5e2ea</color>
+
+    <color name="crop_additional_medium">#d6e3ec</color>
+
+    <color name="crop_almond">#c8b078</color>
+
+    <color name="crop_almond_light">#f0e9da</color>
+
+    <color name="crop_almond_medium">#e6dac0</color>
+
+    <color name="crop_apple">#d07868</color>
+
+    <color name="crop_apple_light">#f1d6d1</color>
+
+    <color name="crop_apple_medium">#e8beb6</color>
+
+    <color name="crop_apricot">#e0c058</color>
+
+    <color name="crop_apricot_light">#f6eccc</color>
+
+    <color name="crop_apricot_medium">#f0e0ae</color>
+
+    <color name="crop_asparagus">#b8b8b8</color>
+
+    <color name="crop_asparagus_light">#fdfdfd</color>
+
+    <color name="crop_asparagus_medium">#ebebeb</color>
+
+    <color name="crop_avocado">#b7bab0</color>
+
+    <color name="crop_avocado_light">#fafafa</color>
+
+    <color name="crop_avocado_medium">#e9eae6</color>
+
+    <color name="crop_banana">#eebe37</color>
+
+    <color name="crop_banana_light">#f9e7b6</color>
+
+    <color name="crop_banana_medium">#f6dd95</color>
+
+    <color name="crop_barley">#c0b070</color>
+
+    <color name="crop_barley_light">#eae5d0</color>
+
+    <color name="crop_barley_medium">#dfd7b7</color>
+
+    <color name="crop_bean">#ca8e4b</color>
+
+    <color name="crop_bean_light">#e9d1b5</color>
+
+    <color name="crop_bean_medium">#e1bf9a</color>
+
+    <color name="crop_bitter_gourd">#57b283</color>
+
+    <color name="crop_bitter_gourd_light">#ccdcab</color>
+
+    <color name="crop_bitter_gourd_medium">#a5bc74</color>
+
+    <color name="crop_blackberry">#a09ebe</color>
+
+    <color name="crop_blackberry_light">#f1f0f5</color>
+
+    <color name="crop_blackberry_medium">#dcdbe7</color>
+
+    <color name="crop_blueberry">#888fbc</color>
+
+    <color name="crop_blueberry_light">#e0e2ee</color>
+
+    <color name="crop_blueberry_medium">#c9cce1</color>
+
+    <color name="crop_cabbage">#99a73c</color>
+
+    <color name="crop_cabbage_light">#d0d994</color>
+
+    <color name="crop_cabbage_medium">#c4cf7a</color>
+
+    <color name="crop_canola">#f4dc30</color>
+
+    <color name="crop_canola_light">#f6f0b3</color>
+
+    <color name="crop_canola_medium">#f3ea93</color>
+
+    <color name="crop_carrot">#fa9759</color>
+
+    <color name="crop_carrot_light">#feebdf</color>
+
+    <color name="crop_carrot_medium">#fdd5bc</color>
+
+    <color name="crop_cashew">#d0ca8d</color>
+
+    <color name="crop_cashew_light">#f8f7ef</color>
+
+    <color name="crop_cashew_medium">#eeecd5</color>
+
+    <color name="crop_cauliflower">#c5c79a</color>
+
+    <color name="crop_cauliflower_light">#f8f8f3</color>
+
+    <color name="crop_cauliflower_medium">#ebebdc</color>
+
+    <color name="crop_chard">#94c697</color>
+
+    <color name="crop_chard_light">#eef6ee</color>
+
+    <color name="crop_chard_medium">#d7e9d8</color>
+
+    <color name="crop_cherry">#c88088</color>
+
+    <color name="crop_cherry_light">#f2e0e2</color>
+
+    <color name="crop_cherry_medium">#e7c7cb</color>
+
+    <color name="crop_chickpea">#d8b878</color>
+
+    <color name="crop_chickpea_light">#f7f0e3</color>
+
+    <color name="crop_chickpea_medium">#efe2c7</color>
+
+    <color name="crop_citrus">#f1da49</color>
+
+    <color name="crop_citrus_light">#fbf4c9</color>
+
+    <color name="crop_citrus_medium">#f8eda8</color>
+
+    <color name="crop_cocoa">#a4947e</color>
+
+    <color name="crop_cocoa_light">#ddd7cf</color>
+
+    <color name="crop_cocoa_medium">#cec6ba</color>
+
+    <color name="crop_coconut">#987068</color>
+
+    <color name="crop_coconut_light">#d0beba</color>
+
+    <color name="crop_coconut_medium">#c1a9a5</color>
+
+    <color name="crop_coffee">#da877c</color>
+
+    <color name="crop_coffee_light">#f8e9e7</color>
+
+    <color name="crop_coffee_medium">#f0d0cc</color>
+
+    <color name="crop_cotton">#a7a7a4</color>
+
+    <color name="crop_cotton_light">#e3e3e3</color>
+
+    <color name="crop_cotton_medium">#d9d9d8</color>
+
+    <color name="crop_cucumber">#acc3a2</color>
+
+    <color name="crop_cucumber_light">#ebefe9</color>
+
+    <color name="crop_cucumber_medium">#e3ebe0</color>
+
+    <color name="crop_currant">#cc7f6c</color>
+
+    <color name="crop_currant_light">#efd8d2</color>
+
+    <color name="crop_currant_medium">#e6c1b8</color>
+
+    <color name="crop_dates">#d3996d</color>
+
+    <color name="crop_dates_light">#f3e3d7</color>
+
+    <color name="crop_dates_medium">#ebd0bb</color>
+
+    <color name="crop_eggplant">#a995ac</color>
+
+    <color name="crop_eggplant_light">#e8e2e8</color>
+
+    <color name="crop_eggplant_medium">#d7ced9</color>
+
+    <color name="crop_fig">#a07ab1</color>
+
+    <color name="crop_fig_light">#ded1e4</color>
+
+    <color name="crop_fig_medium">#cebad7</color>
+
+    <color name="crop_garlic">#ede4e6</color>
+
+    <color name="crop_garlic_light">#f1f1f0</color>
+
+    <color name="crop_garlic_medium">#dfdfde</color>
+
+    <color name="crop_ginger">#d6a561</color>
+
+    <color name="crop_ginger_light">#f6e5d1</color>
+
+    <color name="crop_ginger_medium">#e8d0b3</color>
+
+    <color name="crop_gooseberry">#d0e080</color>
+
+    <color name="crop_gooseberry_light">#f9fbef</color>
+
+    <color name="crop_gooseberry_medium">#eef4d2</color>
+
+    <color name="crop_gram">#9aa896</color>
+
+    <color name="crop_gram_light">#e2e6e1</color>
+
+    <color name="crop_gram_medium">#d0d6ce</color>
+
+    <color name="crop_grape">#7f7ecd</color>
+
+    <color name="crop_grape_light">#e1e1f3</color>
+
+    <color name="crop_grape_medium">#c8c8e9</color>
+
+    <color name="crop_leek">#ead96f</color>
+
+    <color name="crop_leek_light">#fcf9e7</color>
+
+    <color name="crop_leek_medium">#f7f0c8</color>
+
+    <color name="crop_lentil">#bec392</color>
+
+    <color name="crop_lentil_light">#f3f4eb</color>
+
+    <color name="crop_lentil_medium">#e5e7d4</color>
+
+    <color name="crop_lettuce">#b9c96d</color>
+
+    <color name="crop_lettuce_light">#e9eed2</color>
+
+    <color name="crop_lettuce_medium">#dde5b7</color>
+
+    <color name="crop_maize">#fcc938</color>
+
+    <color name="crop_maize_light">#feeec0</color>
+
+    <color name="crop_maize_medium">#fee49c</color>
+
+    <color name="crop_mango">#e8a840</color>
+
+    <color name="crop_mango_light">#f7e0bb</color>
+
+    <color name="crop_mango_medium">#f3d19b</color>
+
+    <color name="crop_manioc">#c2a99f</color>
+
+    <color name="crop_manioc_light">#f8f4f3</color>
+
+    <color name="crop_manioc_medium">#eae1dd</color>
+
+    <color name="crop_melon">#f8a858</color>
+
+    <color name="crop_melon_light">#feeddc</color>
+
+    <color name="crop_melon_medium">#fcdbba</color>
+
+    <color name="crop_millet">#dcb77b</color>
+
+    <color name="crop_millet_light">#f9f2e8</color>
+
+    <color name="crop_millet_medium">#f1e3cc</color>
+
+    <color name="crop_oat">#cace67</color>
+
+    <color name="crop_oat_light">#eef0cf</color>
+
+    <color name="crop_oat_medium">#e5e7b4</color>
+
+    <color name="crop_okra">#909c7c</color>
+
+    <color name="crop_okra_light">#d2d7ca</color>
+
+    <color name="crop_okra_medium">#c1c8b6</color>
+
+    <color name="crop_olive">#c0c078</color>
+
+    <color name="crop_olive_light">#ececd6</color>
+
+    <color name="crop_olive_medium">#e0e0be</color>
+
+    <color name="crop_onion">#b3ad8a</color>
+
+    <color name="crop_onion_light">#e9e8dd</color>
+
+    <color name="crop_onion_medium">#dbd8c8</color>
+
+    <color name="crop_papaya">#f88030</color>
+
+    <color name="crop_papaya_light">#fdd2b5</color>
+
+    <color name="crop_papaya_medium">#fbbd93</color>
+
+    <color name="crop_pea">#9fc58e</color>
+
+    <color name="crop_pea_light">#ecf4e9</color>
+
+    <color name="crop_pea_medium">#d8e8d1</color>
+
+    <color name="crop_peach">#f09040</color>
+
+    <color name="crop_peach_light">#fadac0</color>
+
+    <color name="crop_peach_medium">#f7c79f</color>
+
+    <color name="crop_peanut">#bba890</color>
+
+    <color name="crop_peanut_light">#efebe5</color>
+
+    <color name="crop_peanut_medium">#e2dacf</color>
+
+    <color name="crop_pear">#90b070</color>
+
+    <color name="crop_pear_light">#d5e1c9</color>
+
+    <color name="crop_pear_medium">#c3d4b2</color>
+
+    <color name="crop_pepper">#e86868</color>
+
+    <color name="crop_pepper_light">#fadfdf</color>
+
+    <color name="crop_pepper_medium">#f5c1c1</color>
+
+    <color name="crop_pigeonpea">#a6b188</color>
+
+    <color name="crop_pigeonpea_light">#e4e8db</color>
+
+    <color name="crop_pigeonpea_medium">#d4d9c6</color>
+
+    <color name="crop_pineapple">#e5e07c</color>
+
+    <color name="crop_pineapple_light">#fcfbef</color>
+
+    <color name="crop_pineapple_medium">#f6f4d1</color>
+
+    <color name="crop_plum">#a0a0b8</color>
+
+    <color name="crop_plum_light">#efeff3</color>
+
+    <color name="crop_plum_medium">#dadae4</color>
+
+    <color name="crop_pomegranate">#bf806d</color>
+
+    <color name="crop_pomegranate_light">#e9d3cd</color>
+
+    <color name="crop_pomegranate_medium">#debeb4</color>
+
+    <color name="crop_potato">#ccb277</color>
+
+    <color name="crop_potato_light">#f2ebdb</color>
+
+    <color name="crop_potato_medium">#e8dcc1</color>
+
+    <color name="crop_pumpkin">#d0a050</color>
+
+    <color name="crop_pumpkin_light">#eddbbd</color>
+
+    <color name="crop_pumpkin_medium">#e6cca0</color>
+
+    <color name="crop_quince">#e3c673</color>
+
+    <color name="crop_quince_light">#faf5e6</color>
+
+    <color name="crop_quince_medium">#f4e9c8</color>
+
+    <color name="crop_radish">#d686a6</color>
+
+    <color name="crop_radish_light">#f9edf2</color>
+
+    <color name="crop_radish_medium">#f0d2de</color>
+
+    <color name="crop_raspberry">#ee6982</color>
+
+    <color name="crop_raspberry_light">#fce5e9</color>
+
+    <color name="crop_raspberry_medium">#f8c5ce</color>
+
+    <color name="crop_rice">#f5cf2d</color>
+
+    <color name="crop_rice_light">#fbedb0</color>
+
+    <color name="crop_rice_medium">#fae58e</color>
+
+    <color name="crop_rose">#cf8984</color>
+
+    <color name="crop_rose_light">#f6e8e7</color>
+
+    <color name="crop_rose_medium">#eccfcd</color>
+
+    <color name="crop_rye">#c0b068</color>
+
+    <color name="crop_rye_light">#e9e3c9</color>
+
+    <color name="crop_rye_medium">#ded6b0</color>
+
+    <color name="crop_sorghum">#b54637</color>
+
+    <color name="crop_sorghum_light">#df9f96</color>
+
+    <color name="crop_sorghum_medium">#d7867b</color>
+
+    <color name="crop_soybean">#97a849</color>
+
+    <color name="crop_soybean_light">#ced7a3</color>
+
+    <color name="crop_soybean_medium">#c1cc8b</color>
+
+    <color name="crop_spinach">#90a850</color>
+
+    <color name="crop_spinach_light">#cbd7ab</color>
+
+    <color name="crop_spinach_medium">#bccb93</color>
+
+    <color name="crop_strawberry">#a85850</color>
+
+    <color name="crop_strawberry_light">#d7afab</color>
+
+    <color name="crop_strawberry_medium">#cb9893</color>
+
+    <color name="crop_sugar_beet">#c8b888</color>
+
+    <color name="crop_sugar_beet_light">#f4f0e6</color>
+
+    <color name="crop_sugar_beet_medium">#e8e2ce</color>
+
+    <color name="crop_sugarcane">#9ab795</color>
+
+    <color name="crop_sugarcane_light">#e8efe7</color>
+
+    <color name="crop_sugarcane_medium">#d4e0d2</color>
+
+    <color name="crop_sweet_potato">#c99469</color>
+
+    <color name="crop_sweet_potato_light">#eddcce</color>
+
+    <color name="crop_sweet_potato_medium">#e4cab4</color>
+
+    <color name="crop_tomato">#efa496</color>
+
+    <color name="crop_tomato_light">#ffe4df</color>
+
+    <color name="crop_tomato_medium">#fdd1c9</color>
+
+    <color name="crop_triticale">#c8a870</color>
+
+    <color name="crop_triticale_light">#eee5d3</color>
+
+    <color name="crop_triticale_medium">#e4d5ba</color>
+
+    <color name="crop_turmeric">#bca26f</color>
+
+    <color name="crop_turmeric_light">#efe2c8</color>
+
+    <color name="crop_turmeric_medium">#dac6a0</color>
+
+    <color name="crop_turnip">#ccc388</color>
+
+    <color name="crop_turnip_light">#f5f4e8</color>
+
+    <color name="crop_turnip_medium">#ebe7cf</color>
+
+    <color name="crop_wheat">#c26f3e</color>
+
+    <color name="crop_wheat_light">#e3bda7</color>
+
+    <color name="crop_wheat_medium">#daa98c</color>
+
+    <color name="crop_zucchini">#a9cc71</color>
+
+    <color name="crop_zucchini_light">#e6f0d6</color>
+
+    <color name="crop_zucchini_medium">#d6e7bc</color>
+
+    <color name="dark_grey">#263238</color>
+
+    <color name="dark_indigo">#3f51b5</color>
+
+    <color name="dark_red">#d32f2f</color>
+
+    <color name="deep_orange_accent">#ff6e40</color>
+
+    <color name="default_dot_color">#e8e8e8</color>
+
+    <color name="default_selected_dot_color">#ffffff</color>
+
+    <color name="design_bottom_navigation_shadow_color">#14000000</color>
+
+    <color name="design_dark_default_color_background">#121212</color>
+
+    <color name="design_dark_default_color_error">#cf6679</color>
+
+    <color name="design_dark_default_color_on_background">#ffffff</color>
+
+    <color name="design_dark_default_color_on_error">#000000</color>
+
+    <color name="design_dark_default_color_on_primary">#000000</color>
+
+    <color name="design_dark_default_color_on_secondary">#000000</color>
+
+    <color name="design_dark_default_color_on_surface">#ffffff</color>
+
+    <color name="design_dark_default_color_primary">#bb86fc</color>
+
+    <color name="design_dark_default_color_primary_dark">#000000</color>
+
+    <color name="design_dark_default_color_primary_variant">#3700b3</color>
+
+    <color name="design_dark_default_color_secondary">#03dac6</color>
+
+    <color name="design_dark_default_color_secondary_variant">#03dac6</color>
+
+    <color name="design_dark_default_color_surface">#121212</color>
+
+    <color name="design_default_color_background">#ffffff</color>
+
+    <color name="design_default_color_error">#b00020</color>
+
+    <color name="design_default_color_on_background">#000000</color>
+
+    <color name="design_default_color_on_error">#ffffff</color>
+
+    <color name="design_default_color_on_primary">#ffffff</color>
+
+    <color name="design_default_color_on_secondary">#000000</color>
+
+    <color name="design_default_color_on_surface">#000000</color>
+
+    <color name="design_default_color_primary">#6200ee</color>
+
+    <color name="design_default_color_primary_dark">#3700b3</color>
+
+    <color name="design_default_color_primary_variant">#3700b3</color>
+
+    <color name="design_default_color_secondary">#03dac6</color>
+
+    <color name="design_default_color_secondary_variant">#018786</color>
+
+    <color name="design_default_color_surface">#ffffff</color>
+
+    <color name="design_fab_shadow_end_color">@android:color/transparent</color>
+
+    <color name="design_fab_shadow_mid_color">#14000000</color>
+
+    <color name="design_fab_shadow_start_color">#44000000</color>
+
+    <color name="design_fab_stroke_end_inner_color">#0a000000</color>
+
+    <color name="design_fab_stroke_end_outer_color">#0f000000</color>
+
+    <color name="design_fab_stroke_top_inner_color">#1affffff</color>
+
+    <color name="design_fab_stroke_top_outer_color">#2effffff</color>
+
+    <color name="design_snackbar_background_color">#323232</color>
+
+    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
+
+    <color name="dim_foreground_disabled_material_light">#80323232</color>
+
+    <color name="dim_foreground_material_dark">#ffbebebe</color>
+
+    <color name="dim_foreground_material_light">#ff323232</color>
+
+    <color name="error_color_material_dark">#ff7043</color>
+
+    <color name="error_color_material_light">#ff5722</color>
+
+    <color name="facebook_blue">@color/com_facebook_blue</color>
+
+    <color name="foreground_material_dark">@android:color/white</color>
+
+    <color name="foreground_material_light">@android:color/black</color>
+
+    <color name="green_positive">#7cb342</color>
+
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+
+    <color name="highlighted_text_material_light">#66009688</color>
+
+    <color name="ic_launcher_background">#ffffff</color>
+
+    <color name="light_blue_grey">#607d8b</color>
+
+    <color name="profile_header">#607d8b</color>
+
+    <color name="light_teal">#b2dfdb</color>
+
+    <color name="material_blue_grey_800">#ff37474f</color>
+
+    <color name="material_blue_grey_900">#ff263238</color>
+
+    <color name="material_blue_grey_950">#ff21272b</color>
+
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+
+    <color name="material_deep_teal_500">#ff008577</color>
+
+    <color name="material_grey_100">#fff5f5f5</color>
+
+    <color name="material_grey_300">#ffe0e0e0</color>
+
+    <color name="material_grey_50">#fffafafa</color>
+
+    <color name="material_grey_600">#ff757575</color>
+
+    <color name="material_grey_800">#ff424242</color>
+
+    <color name="material_grey_850">#ff303030</color>
+
+    <color name="material_grey_900">#ff212121</color>
+
+    <color name="medium_grey">#78909c</color>
+
+    <color name="medium_teal">#009688</color>
+
+    <color name="mtrl_btn_text_color_disabled">#61000000</color>
+
+    <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
+
+    <color name="mtrl_scrim_color">#52000000</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">@color/soft_grey</color>
+
+    <color name="mtrl_textinput_disabled_color">#1f000000</color>
+
+    <color name="mtrl_textinput_filled_box_default_background_color">#0a000000</color>
+
+    <color name="mtrl_textinput_focused_box_stroke_color">#00000000</color>
+
+    <color name="mtrl_textinput_hovered_box_stroke_color">#de000000</color>
+
+    <color name="notificationBarColor">@color/primary_dark_grey</color>
+
+    <color name="notification_action_color_filter">@color/androidx_core_secondary_text_default_material_light</color>
+
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+
+    <color name="orange_dark">#ef6c00</color>
+
+
+
+    <color name="pesticide_card">@color/pale_grey</color>
+
+    <color name="primary_dark_grey">#cccccc</color>
+
+    <color name="primary_dark_material_dark">@android:color/black</color>
+
+    <color name="primary_dark_material_light">@color/material_grey_600</color>
+
+    <color name="primary_material_dark">@color/material_grey_900</color>
+
+    <color name="primary_material_light">@color/material_grey_100</color>
+
+    <color name="primary_teal">#00796b</color>
+
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+
+    <color name="primary_text_default_material_light">#de000000</color>
+
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+
+    <color name="primary_text_disabled_material_light">#39000000</color>
+
+    <color name="red">#ef5350</color>
+
+    <color name="ripple_material_dark">#33ffffff</color>
+
+    <color name="ripple_material_light">#1f000000</color>
+
+    <color name="rock_grey">#455a64</color>
+
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+
+    <color name="secondary_text_default_material_light">#8a000000</color>
+
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+
+    <color name="secondary_text_disabled_material_light">#24000000</color>
+
+    <color name="shadow_grey">#d8d8d8</color>
+
+    <color name="snackbar_msg_color">#deffffff</color>
+
+    <color name="soft_grey">#dae1e6</color>
+
+    <color name="switch_thumb_disabled_material_dark">#ff616161</color>
+
+    <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
+
+    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
+
+    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+
+    <color name="tooltip_background_dark">#e6616161</color>
+
+    <color name="tooltip_background_light">#e6ffffff</color>
+
+    <color name="very_light_teal">#e0f2f1</color>
+
+    <color name="weather_clear_day">#d3f9ff</color>
+
+    <color name="weather_clear_night">#d4dde7</color>
+
+    <color name="weather_cloudy">#fafafa</color>
+
+    <color name="weather_fog">#fafafa</color>
+
+    <color name="weather_partly_cloudy_day">#d3f9ff</color>
+
+    <color name="weather_partly_cloudy_night">#d4dde7</color>
+
+    <color name="weather_rain">#fafafa</color>
+
+    <color name="weather_sleet">#fafafa</color>
+
+    <color name="weather_snow">#fafafa</color>
+
+    <color name="weather_wind">#fafafa</color>
+
+    <color name="whats_app_color">#25d366</color>
+
+    <color name="whats_app_color_light">#dcf8c6</color>
+
+    <color name="whine_red">#c67474</color>
+
+    <color name="ivory">#FFFFF0</color>
+    <color name="light_yellow">#FFFFE0</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="floral_white">#FFFAF0</color>
+    <color name="lemon_chiffon">#FFFACD</color>
+    <color name="cornsilk">#FFF8DC</color>
+    <color name="seashell">#FFF5EE</color>
+    <color name="lavender_blush">#FFF0F5</color>
+    <color name="papaya_whip">#FFEFD5</color>
+    <color name="blanched_almond">#FFEBCD</color>
+    <color name="misty_rose">#FFE4E1</color>
+    <color name="bisque">#FFE4C4</color>
+    <color name="moccasin">#FFE4B5</color>
+    <color name="navajo_white">#FFDEAD</color>
+    <color name="peach_puff">#FFDAB9</color>
+    <color name="cold">#FFD700</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="light_pink">#FFB6C1</color>
+    <color name="light_salmon">#FFA07A</color>
+    <color name="coral">#FF7F50</color>
+    <color name="hot_pink">#FF69B4</color>
+    <color name="tomato">#FF6347</color>
+    <color name="orange_red">#FF4500</color>
+    <color name="deep_pink">#FF1493</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="old_lace">#FDF5E6</color>
+    <color name="light_goldenrod_yellow">#FAFAD2</color>
+    <color name="linen">#FAF0E6</color>
+    <color name="antique_white">#FAEBD7</color>
+    <color name="salmon">#FA8072</color>
+    <color name="ghost_white">#F8F8FF</color>
+    <color name="mint_cream">#F5FFFA</color>
+    <color name="white_smoke">#F5F5F5</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="wheat">#F5DEB3</color>
+    <color name="sandy_brown">#F4A460</color>
+    <color name="azure">#F0FFFF</color>
+    <color name="honeydew">#F0FFF0</color>
+    <color name="alice_blue">#F0F8FF</color>
+    <color name="khaki">#F0E68C</color>
+    <color name="light_coral">#F08080</color>
+    <color name="pale_goldenrod">#EEE8AA</color>
+    <color name="violet">#EE82EE</color>
+    <color name="dark_salmon">#E9967A</color>
+    <color name="lavender">#E6E6FA</color>
+    <color name="light_cyan">#E0FFFF</color>
+    <color name="burlyWood">#DEB887</color>
+    <color name="plum">#DDA0DD</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="crimson">#DC143C</color>
+    <color name="pale_violet_red">#DB7093</color>
+    <color name="goldenrod">#DAA520</color>
+    <color name="orchid">#DA70D6</color>
+    <color name="thistle">#D8BFD8</color>
+    <color name="tan">#D2B48C</color>
+    <color name="chocolate">#D2691E</color>
+    <color name="peru">#CD853F</color>
+    <color name="indian_red">#CD5C5C</color>
+    <color name="medium_violet_red">#C71585</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="dark_khaki">#BDB76B</color>
+    <color name="rosy_brown">#BC8F8F</color>
+    <color name="medium_orchid">#BA55D3</color>
+    <color name="dark_goldenrod">#B8860B</color>
+    <color name="fire_brick">#B22222</color>
+    <color name="powder_blue">#B0E0E6</color>
+    <color name="light_steel_blue">#B0C4DE</color>
+    <color name="pale_turquoise">#AFEEEE</color>
+    <color name="greenYellow">#ADFF2F</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="brown">#A52A2A</color>
+    <color name="sienna">#A0522D</color>
+    <color name="yellow_green">#9ACD32</color>
+    <color name="dark_orchid">#9932CC</color>
+    <color name="pale_green">#98FB98</color>
+    <color name="dark_violet">#9400D3</color>
+    <color name="mediumPurple">#9370DB</color>
+    <color name="_light_green">#90EE90</color>
+    <color name="dark_sea_green">#8FBC8F</color>
+    <color name="saddle_brown">#8B4513</color>
+    <color name="dark_magenta">#8B008B</color>
+    <color name="blue_violet">#8A2BE2</color>
+    <color name="light_sky_blue">#87CEFA</color>
+    <color name="sky_blue">#87CEEB</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="maroon">#800000</color>
+    <color name="aquamarine">#7FFFD4</color>
+    <color name="chartreuse">#7FFF00</color>
+    <color name="lawn_green">#7CFC00</color>
+    <color name="medium_slate_blue">#7B68EE</color>
+    <color name="light_slate_gray">#778899</color>
+    <color name="slate_gray">#708090</color>
+    <color name="olive_drab">#6B8E23</color>
+    <color name="slate_blue">#6A5ACD</color>
+    <color name="dim_gray">#696969</color>
+    <color name="medium_aquamarine">#66CDAA</color>
+    <color name="cornflower_blue">#6495ED</color>
+    <color name="cadet_blue">#5F9EA0</color>
+    <color name="dark_olive_green">#556B2F</color>
+    <color name="indigo">#4B0082</color>
+    <color name="medium_turquoise">#48D1CC</color>
+    <color name="dark_slate_blue">#483D8B</color>
+    <color name="steel_blue">#4682B4</color>
+    <color name="royal_blue">#4169E1</color>
+    <color name="turquoise">#40E0D0</color>
+    <color name="medium_sea_green">#3CB371</color>
+    <color name="lime_green">#32CD32</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="sea_green">#2E8B57</color>
+    <color name="forest_green">#228B22</color>
+    <color name="light_sea_green">#20B2AA</color>
+    <color name="dodger_blue">#1E90FF</color>
+    <color name="midnight_blue">#191970</color>
+
+    <color name="borderUnSelectedColor">#66FFFFFF</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="spring_green">#00FF7F</color>
+    <color name="lime">#00FF00</color>
+    <color name="medium_spring_green">#00FA9A</color>
+    <color name="dark_turquoise">#00CED1</color>
+    <color name="deep_sky_blue">#00BFFF</color>
+    <color name="dark_cyan">#008B8B</color>
+    <color name="teal">#008080</color>
+    <color name="dark_green">#006400</color>
+    <color name="medium_blue">#0000CD</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="navy">#000080</color>
+
+    <color name="white_alpha">#40ffffff</color>
+</resources>

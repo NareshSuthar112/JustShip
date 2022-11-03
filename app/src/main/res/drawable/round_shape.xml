@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="120"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="140">
+
+    <!--<item>
+        <shape android:shape="rectangle"/>
+    </item>
+
+    <item android:left="-100dp"
+        android:right="-230dp"
+        android:bottom="0dp"
+        android:top="-200dp">
+        <shape android:shape="oval">
+            <gradient android:startColor="@color/blue"
+                android:endColor="@color/blue"/>
+        </shape>
+    </item>-->
+
+    <!--<item android:id="@android:id/background">
+        <shape
+            android:angle="0"
+            android:innerRadiusRatio="2.3"
+            android:shape="ring"
+            android:thicknessRatio="20.0"
+            android:type="sweep"
+            android:useLevel="false">
+            <solid android:color="@color/red" />
+        </shape>
+    </item>-->
+
+    <!--<corners
+        android:bottomRightRadius="10dp"
+        android:radius="40dp" />
+
+    <gradient
+        android:angle="45"
+        android:centerX="float"
+        android:centerY="float"
+        android:endColor="#01f1fa"
+        android:gradientRadius="integer"
+        android:startColor="#0189ff"
+        android:type="linear" />
+
+    &lt;!&ndash;If your shape requires only one solid color&ndash;&gt;
+    &lt;!&ndash;<solid
+        android:color="#FFFFFF" />&ndash;&gt;
+
+    <size
+        android:width="82dp"
+        android:height="82dp" />
+
+    &lt;!&ndash;Use android:dashWidth="2dp" and android:dashGap="2dp"
+    to add dashes to your stroke&ndash;&gt;
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" />-->
+
+    <!--<item android:top="180dp">
+        <shape>
+            <solid android:color="#6bcbf4" />
+        </shape>
+    </item>
+
+
+    <item android:bottom="900px">
+        <shape android:shape="oval">
+            <solid android:color="#FFF8F8F8"
+                />
+        </shape>
+    </item>-->
+
+    <!--<item>
+        <rotate
+            android:fromDegrees="45"
+            android:toDegrees="45"
+            android:pivotX="-40%"
+            android:pivotY="87%" >
+            <shape
+                android:shape="rectangle" >
+                <stroke android:color="#" android:width="10dp"/>
+                <solid
+                    android:color="" />
+            </shape>
+        </rotate>
+    </item>-->
+
+
+</layer-list>

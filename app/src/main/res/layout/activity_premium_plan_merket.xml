@@ -1,0 +1,1189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".PremiumPlanMarketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/emen_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d_5dp"
+            android:gravity="center"
+            android:text="Subscriptions"
+            android:textColor="#1fac5e"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d_2dp">
+
+                <TextView
+                    android:id="@+id/tvFree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/d_18dp"
+                    android:layout_toStartOf="@+id/tvVIP"
+                    android:gravity="center"
+                    android:letterSpacing=".1"
+                    android:padding="@dimen/d_2dp"
+                    android:text="BASIC"
+                    android:textColor="#A1FFFFFF"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/d_18dp"
+                    android:layout_toStartOf="@+id/tvPremium"
+                    android:background="@color/yellow"
+                    android:gravity="center"
+                    android:letterSpacing=".1"
+                    android:padding="@dimen/d_2dp"
+                    android:text="CERTIFIED"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPremium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:background="#BC5E5E"
+                    android:gravity="center"
+                    android:letterSpacing=".1"
+                    android:padding="@dimen/d_2dp"
+                    android:text="PREMIUM"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvListOfPremium1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlHeader"
+                android:layout_marginStart="@dimen/d_2dp"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                tools:listitem="@layout/raw_table" />
+
+            <LinearLayout
+                android:id="@+id/llPlanSelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvListOfPremium1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/llVIP"
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="@dimen/d_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/raw_border_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvC1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d_8dp"
+                        android:padding="4dp"
+                        android:text="Current Plan"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@color/yellow"
+                        android:gravity="center"
+                        android:letterSpacing=".1"
+                        android:padding="@dimen/d_2dp"
+                        android:text="Certified"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvVipPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/d_12dp"
+                            android:text="599"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/tvVipPrice"
+                            android:padding="4dp"
+                            android:text="/Year"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/d_12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llUpgrade"
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="@dimen/d_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/raw_border_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d_8dp"
+                        android:padding="4dp"
+                        android:text="Upgrade To"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/light_blue"
+                        android:gravity="center"
+                        android:letterSpacing=".1"
+                        android:padding="@dimen/d_2dp"
+                        android:text="PREMIUM"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPremiumPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/d_12dp"
+                            android:text="1999"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/tvPremiumPrice"
+                            android:padding="4dp"
+                            android:text="/Year"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/d_12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlanRoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llPlanSelection"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card"
+                        android:layout_width="200dp"
+                        android:layout_height="125dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="@dimen/d_5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/llProductName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvProductName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:text="Emen"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/d_5dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:background="@color/yellow"
+                                    android:gravity="center"
+                                    android:letterSpacing=".1"
+                                    android:padding="@dimen/d_2dp"
+                                    android:text="CERTIFIED"
+                                    android:textColor="@color/black"
+                                    android:textSize="7dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/v1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/llProductName"
+                                android:layout_marginStart="@dimen/d_2dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="@dimen/d_2dp"
+                                android:background="#2D000000" />
+
+
+                            <TextView
+                                android:id="@+id/tvAmountLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v1"
+                                android:layout_marginStart="@dimen/d_20dp"
+                                android:layout_marginTop="5dp"
+                                android:letterSpacing=".08"
+                                android:text="Amount"
+                                android:textColor="#9C000000"
+                                android:textSize="@dimen/d_12dp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlProductPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAmountLabel"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="@dimen/d_2dp"
+                                    android:layout_toStartOf="@+id/tvProductPrice"
+                                    android:background="@color/light_grey" />
+
+                                <TextView
+                                    android:id="@+id/tvProductPrice1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:text="₹5000"
+                                    android:textColor="#9C000000"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvProductPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/d_5dp"
+                                    android:layout_toEndOf="@+id/tvProductPrice1"
+                                    android:text="₹3000"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/d_18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/tvProductPrice"
+                                    android:layout_toEndOf="@+id/tvProductPrice"
+                                    android:padding="4dp"
+                                    android:text="/Year"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvDescLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rlProductPrice"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/d_12dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:padding="@dimen/d_2dp"
+                                android:text="Amount with GST: ₹3540/year"
+                                android:textColor="#9C000000"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvDescLabel"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/d_20dp"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:maxLines="2"
+                                android:text="View Details"
+                                android:textColor="#0D47A1"
+                                android:textSize="10dp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/card"
+                        android:layout_marginHorizontal="@dimen/d_40dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginBottom="@dimen/d_20dp"
+                        android:backgroundTint="#0D47A1"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="PAY NOW"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/vertical_dotted_view" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardWithBilling"
+                        android:layout_width="200dp"
+                        android:layout_height="125dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="@dimen/d_5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/llProductNameWithBilling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvProductNameWithBilling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:text="Emen"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/d_5dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:background="@color/yellow"
+                                    android:gravity="center"
+                                    android:letterSpacing=".1"
+                                    android:padding="@dimen/d_2dp"
+                                    android:text="CERTIFIED"
+                                    android:textColor="@color/black"
+                                    android:textSize="7dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvProductName1WithBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/llProductNameWithBilling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:text="+ Emen Billing"
+                                android:textColor="@color/black"
+                                android:textSize="10dp" />
+
+                            <View
+                                android:id="@+id/v1WithBilling"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/tvProductName1WithBilling"
+                                android:layout_marginStart="@dimen/d_2dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="@dimen/d_2dp"
+                                android:background="#2D000000" />
+
+
+                            <TextView
+                                android:id="@+id/tvAmountLabelWithBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v1WithBilling"
+                                android:layout_marginStart="@dimen/d_20dp"
+                                android:layout_marginTop="5dp"
+                                android:letterSpacing=".08"
+                                android:text="Amount"
+                                android:textColor="#9C000000"
+                                android:textSize="@dimen/d_12dp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlProductPriceWithBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAmountLabelWithBilling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="@dimen/d_2dp"
+                                    android:layout_toStartOf="@+id/tvProductPriceWithBilling"
+                                    android:background="@color/light_grey" />
+
+                                <TextView
+                                    android:id="@+id/tvProductPrice1WithBilling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:text="₹6000"
+                                    android:textColor="#9C000000"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvProductPriceWithBilling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/d_5dp"
+                                    android:layout_toEndOf="@+id/tvProductPrice1WithBilling"
+                                    android:text="₹4000"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/d_18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/tvProductPriceWithBilling"
+                                    android:layout_toEndOf="@+id/tvProductPriceWithBilling"
+                                    android:padding="4dp"
+                                    android:text="/Year"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvDescLabelWithBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rlProductPriceWithBilling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/d_12dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:padding="@dimen/d_2dp"
+                                android:text="Amount with GST: ₹4720/year"
+                                android:textColor="#9C000000"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDescWithBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvDescLabelWithBilling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/d_20dp"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:maxLines="2"
+                                android:text="View Details"
+                                android:textColor="#0D47A1"
+                                android:textSize="10dp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/cardWithBilling"
+                        android:layout_marginHorizontal="@dimen/d_40dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginBottom="@dimen/d_20dp"
+                        android:backgroundTint="#0D47A1"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="PAY NOW"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlanViewDetailsLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llPlanRoot"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvViewDetailsCertified"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="View Details"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tvViewDetailsCertified"
+                        android:layout_marginHorizontal="50dp"
+                        android:background="@color/white" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/vertical_dotted_view" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvViewDetailsCertifiedBilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="View Details"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tvViewDetailsCertifiedBilling"
+                        android:layout_marginHorizontal="50dp"
+                        android:background="@color/white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/llPlanViewDetailsLink"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/vertical_dotted_view" />
+
+            <TextView
+                android:id="@+id/viewPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llPlanViewDetailsLink"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dotted_view" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/viewPlan"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/vertical_dotted_view" />
+
+            <LinearLayout
+                android:id="@+id/llPlanRoot1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPlan"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardPremium"
+                        android:layout_width="200dp"
+                        android:layout_height="125dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="@dimen/d_5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/llProductNamePremium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvProductNamePremium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:text="Emen"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/d_5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="#66AC2525"
+                                    android:gravity="center"
+                                    android:letterSpacing=".1"
+                                    android:padding="@dimen/d_2dp"
+                                    android:text="PREMIUM"
+                                    android:textColor="@color/black"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvPreProductName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/llProductNamePremium"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:text="(Emen Billing included)"
+                                android:textColor="@color/black"
+                                android:textSize="10dp" />
+
+                            <View
+                                android:id="@+id/v1Pre"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/tvPreProductName1"
+                                android:layout_marginStart="@dimen/d_2dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="@dimen/d_2dp"
+                                android:background="#2D000000" />
+
+                            <TextView
+                                android:id="@+id/tvAmountLabelPremium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v1Pre"
+                                android:layout_marginStart="@dimen/d_20dp"
+                                android:layout_marginTop="5dp"
+                                android:letterSpacing=".08"
+                                android:text="Amount"
+                                android:textColor="#9C000000"
+                                android:textSize="@dimen/d_12dp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlProductPricePremium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAmountLabelPremium"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="@dimen/d_2dp"
+                                    android:layout_toStartOf="@+id/tvProductPricePremium"
+                                    android:background="@color/light_grey" />
+
+                                <TextView
+                                    android:id="@+id/tvProductPricePremium1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:text="₹8500"
+                                    android:textColor="#9C000000"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvProductPricePremium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/d_5dp"
+                                    android:layout_toEndOf="@+id/tvProductPricePremium1"
+                                    android:text="₹6018"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/d_18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/tvProductPricePremium"
+                                    android:layout_toEndOf="@+id/tvProductPricePremium"
+                                    android:padding="4dp"
+                                    android:text="/Year"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvDescLabelPremium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rlProductPricePremium"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/d_12dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:padding="@dimen/d_2dp"
+                                android:text="Amount with GST: ₹6018/year"
+                                android:textColor="#9C000000"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDescPremium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvDescLabelPremium"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:maxLines="2"
+                                android:text="View Details"
+                                android:textColor="#0D47A1"
+                                android:textSize="10dp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/cardPremium"
+                        android:layout_marginHorizontal="@dimen/d_40dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginBottom="@dimen/d_20dp"
+                        android:backgroundTint="#0D47A1"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="PAY NOW"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/vertical_dotted_view" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardBilling"
+                        android:layout_width="200dp"
+                        android:layout_height="125dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="@dimen/d_5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/llProductNameBilling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvProductNameBilling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Emen"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/d_12dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/d_5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:background="@color/light_blue"
+                                    android:gravity="center"
+                                    android:letterSpacing=".1"
+                                    android:padding="@dimen/d_2dp"
+                                    android:text="BILLING"
+                                    android:textColor="@color/black"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/v1Billing"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/llProductNameBilling"
+                                android:layout_marginStart="@dimen/d_2dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="@dimen/d_2dp"
+                                android:background="#2D000000" />
+
+
+                            <TextView
+                                android:id="@+id/tvAmountLabelBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/v1Billing"
+                                android:layout_marginStart="@dimen/d_20dp"
+                                android:layout_marginTop="5dp"
+                                android:letterSpacing=".08"
+                                android:text="Amount"
+                                android:textColor="#9C000000"
+                                android:textSize="@dimen/d_12dp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlProductPriceBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAmountLabelBilling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/d_5dp">
+
+                                <TextView
+                                    android:id="@+id/tvProductPriceBilling"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="₹1999"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/d_18dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/tvProductPriceBilling"
+                                    android:layout_toEndOf="@+id/tvProductPriceBilling"
+                                    android:padding="4dp"
+                                    android:text="/Year"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvDescLabelBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rlProductPriceBilling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:padding="@dimen/d_2dp"
+                                android:text="Amount with GST: ₹2359/year"
+                                android:textColor="#9C000000"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDescBilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvDescLabelBilling"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="@dimen/d_20dp"
+                                android:layout_marginTop="@dimen/d_5dp"
+                                android:maxLines="2"
+                                android:text="View Details"
+                                android:textColor="#0D47A1"
+                                android:textSize="10dp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/cardBilling"
+                        android:layout_marginHorizontal="@dimen/d_40dp"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginBottom="@dimen/d_20dp"
+                        android:backgroundTint="#0D47A1"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="PAY NOW"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlanViewDetailsLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llPlanRoot1"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvViewDetailsPremium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="View Details"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tvViewDetailsPremium"
+                        android:layout_marginHorizontal="50dp"
+                        android:background="@color/white" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/vertical_dotted_view" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvViewDetailsBilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="View Details"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tvViewDetailsBilling"
+                        android:layout_marginHorizontal="50dp"
+                        android:background="@color/white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

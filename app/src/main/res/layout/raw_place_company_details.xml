@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_card"
+        style="@style/SelectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="10dp"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:foregroundTint="@color/background"
+        android:translationZ="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d_8dp"
+                android:layout_marginTop="@dimen/d_8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_id"
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Order Generate Id"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="@dimen/d_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Company Name"
+                    android:textColor="@color/background"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_show_hide"
+                    android:layout_width="@dimen/d_20dp"
+                    android:layout_height="@dimen/d_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_up_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/order_layout">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/place_order_detail"
+                    android:layout_width="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d_8dp"
+                    android:layout_marginTop="@dimen/d_8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textColor="#66C792"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/grand_total"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="150000"
+                        android:textColor="#66C792"
+                        android:gravity="end"
+                        android:layout_marginEnd="-3dp"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/d_8dp"
+                        android:layout_weight=".2"
+                        android:gravity="right"
+                        android:text="(₹)"
+                        android:textColor="#66C792"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_8dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Total GST"
+                        android:textColor="#BB7D26"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+<!--
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/d_8dp"
+                        android:layout_weight=".2"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#000"
+                        android:textSize="15sp" />-->
+
+                    <TextView
+                        android:id="@+id/total_gst"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="13450"
+                        android:textColor="#BB7D26"
+                        android:gravity="end"
+                        android:layout_marginEnd="-3dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/d_8dp"
+                        android:layout_weight=".2"
+                        android:gravity="right"
+                        android:text="(₹)"
+                        android:textColor="#BB7D26"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="110dp"
+                    android:layout_height="@dimen/d_1dp"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="@dimen/d_8dp"
+                    android:layout_marginTop="@dimen/d_8dp"
+                    android:background="#F5F5F5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_8dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount(GST)"
+                        android:textColor="#FF4646"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/grand_total_amount_gst"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="163450"
+                        android:textColor="#FF4646"
+                        android:gravity="end"
+                        android:layout_marginEnd="-3dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/d_8dp"
+                        android:layout_weight=".2"
+                        android:gravity="right"
+                        android:text="(₹)"
+                        android:textColor="#FF4646"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="@dimen/d_8dp"
+                android:gravity="center_horizontal"
+                android:text="*Above order will be fulfilled by Company Name, Area Name"
+                android:textSize="12sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/place_order"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E5F8EA"
+                android:padding="10dp"
+                android:text="Place Order to Company Name"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/d_8dp"
+                android:textAllCaps="false"
+                android:textColor="#00BF2D"
+                android:textSize="12sp"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

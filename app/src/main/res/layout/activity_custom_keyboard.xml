@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ALL"
+    tools:context=".CustomKeyboardActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dialog_pos_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your PIN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/d_20dp"
+        android:layout_above="@+id/rlPIN"/>
+
+    <RelativeLayout
+        android:id="@+id/rlPIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlKeyboard"
+        android:layout_marginBottom="150dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="100dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="@dimen/d_12dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="100dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="@dimen/d_12dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="100dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="@dimen/d_12dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="100dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llNum1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNum2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNum3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llNum4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNum5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNum6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llNum7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNum8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNum9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNum0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_grey" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBackSpace"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/ic_baseline_backspace_24"
+                        app:tint="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
